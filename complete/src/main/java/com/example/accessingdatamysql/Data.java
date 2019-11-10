@@ -1,9 +1,11 @@
 package com.example.accessingdatamysql;
 
+import org.springframework.context.annotation.Primary;
+
 import javax.persistence.*;
 
-@Entity // This tells Hibernate to make a table out of this class
-public class DataEntity {
+@Entity
+public class Data {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer entityId;
@@ -40,4 +42,7 @@ public class DataEntity {
 	public void setOwnerId(Integer ownerId) {
 		this.ownerId = ownerId;
 	}
+
+
+
 }
