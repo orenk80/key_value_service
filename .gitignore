@@ -31,3 +31,7 @@ dependency-reduced-pom.xml
 
 .vscode/
 README.html
+ # ignore original files
+test/
+initial/
+images/
